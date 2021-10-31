@@ -1,0 +1,300 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    margin: auto;
+    max-width: 460px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.uvod img {
+    margin: 60px auto 40px auto;
+    width: 350px;
+}
+
+.uvod h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+hr {
+    border: 1px solid #407BFF;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.uvod p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.modry, 
+.sedy {
+    display: block;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 14px;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #8B8B8B;
+}
+
+.modry:hover {
+    background-color: #407BFF;
+} 
+.sedy:hover {
+    background-color: #407BFF;
+}
+
+.uvod p,
+.sluzby1 p,
+.sluzby2 p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #8B8B8B;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.nabidka1,
+.nabidka2,
+.nabidka3,
+.delegati1,
+.delegati2,
+.delegati3 {
+    display: flex;
+    width: 100%;
+    margin: 15px auto;
+    padding: 30px 20px;
+    font-size: 13px;
+    color:#8B8B8B;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px #407BFF1F;
+}
+
+.nabidka img,
+.delegati img {
+    padding: 0 10px;
+    height: 40px;
+}
+
+.nabidka1 p,
+.nabidka2 p,
+.nabidka3 p,
+.delegati1 p,
+.delegati2 p,
+.delegati3 p {
+    text-align: center;
+    font-size: 13px;
+    color:#8B8B8B;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 640px) {
+
+    body {
+        min-width: 550px;
+    }
+    
+    .uvod img {
+        width: 400px;
+    }
+
+    .happytravels p {
+        margin-top: 40px;
+    }
+
+    .modry,
+    .sedy {
+        display: inline-block;
+    } 
+    
+    .modry {
+        margin-right: 10px;
+    }
+
+    .sedy {
+        margin-left: 10px;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+    .nabidka,
+    .delegati {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    .sluzbynabidka p {
+        margin-bottom: 40px;
+    }
+
+    .nabidka1,
+    .nabidka2,
+    .nabidka3,
+    .delegati1,
+    .delegati2,
+    .delegati3 {
+        flex: 1 1 auto;
+        flex-direction: column;
+        align-content: center;
+        margin: 10px;
+    }
+
+    .nabidka1 img,
+    .nabidka2 img,
+    .nabidka3 img,
+    .delegati1 img,
+    .delegati2 img,
+    .delegati3 img {
+        padding: 0 0 10px 0;
+        height: 50px;
+    }
+    
+ }
+
+ @media screen and (min-width: 1100px) {
+    body {
+        min-width: 1100px;
+        margin: 80px auto;
+    }
+    
+    .uvod,
+    .sluzby1,
+    .sluzby2 {
+        display: flex;
+    }
+
+    .uvod {
+        padding: 0;
+    }
+
+    .uvod img {
+        order: 2;
+        width: 420px;
+    }
+
+    .happytravels {
+        order: 1;
+        text-align: left;
+        margin: 60px 90px 0 0;
+        width: 490px;
+        
+    }
+
+    hr {
+        text-align: left;
+        margin: 0;
+    }
+
+    .happytravels p {
+        margin: 40px 0 30px 0;
+    }
+
+    .modry,
+    .sedy {
+        display: inline;
+        margin: 0;
+    }
+
+    .modry {
+        margin-right: 20px;
+    }
+
+    .sluzby1,
+    .sluzby2 {
+       margin: 0 0 80px 0; 
+    }   
+    
+    .nabidka1,
+    .nabidka2,
+    .nabidka3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px 40px 15px;
+        margin: 10px;
+        width: 170px;
+    }
+
+    .sluzbynabidka {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .sluzbynabidka h2 {
+        margin: 30px 0 0 0; 
+    }
+    
+    .nabidka1 {
+        order: 1;
+    }
+    .nabidka2 {
+        order: 2;
+    }
+
+    .nabidka3 {
+        order: 3;
+    }
+
+    .sluzbynabidka {
+        order: 4;
+    }
+
+    .sluzby2 {
+        justify-content: space-between;
+    }
+
+    .sluzbydelegati {
+        display: flex;
+        text-align: left;
+        padding-left: 60px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .delegati1,
+    .delegati2,
+    .delegati3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px 40px 15px;
+        margin: 10px;
+        width: 170px;
+    }
+
+   
+    .sluzbydelegati {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;
+        width: 430px;
+    }
+
+    .sluzbydelegati h2 {
+        margin: 0;
+    }
+}
